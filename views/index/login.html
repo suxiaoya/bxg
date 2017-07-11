@@ -20,19 +20,30 @@
                     <span class="input-group-addon">
                         <i class="fa fa-user"></i>
                     </span>
-                    <input id="name" type="text" class="form-control" placeholder="用户名"
-                    value="前端学院">
+                    <input id="name" type="text" class="form-control" placeholder="用户名">
                 </div>
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon">
                         <i class="fa fa-key"></i>
                     </span>
-                    <input id="pass" type="password" class="form-control" placeholder="密码"
-                    value="123456">
+                    <input id="pass" type="password" class="form-control" placeholder="密码">
                 </div>
-                <a href="./dashboard.html" type="submit" class="btn btn-lg btn-primary btn-block">登 录</a>
+                <!--<a href="./dashboard.html" type="submit" class="btn btn-lg btn-primary btn-block">登 录</a>-->
+                <button id="login" type="submit" class="btn btn-lg btn-primary btn-block">登 录</button>
             </form>
         </div>
     </div>
+
+    <!--
+        1.引入requireJS
+        2.引入主模块
+        3.配置
+        4.在主模块中引入实现登录功能的代码
+    -->
+
+    <script src="../../node_modules/requirejs/require.js"></script>
+    <script>
+        require(['/bxg/assets/js/config.js','/bxg/assets/js/index/index.js'],function(){});
+    </script>
 </body>
 </html>
